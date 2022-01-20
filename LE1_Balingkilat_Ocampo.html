@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Flavors&family=Fredericka+the+Great&family=Indie+Flower&family=Metal&family=Permanent+Marker&family=Schoolbell&family=Srisakdi&family=Yellowtail&display=swap" rel="stylesheet">
+        <title>
+            Sample Cafe Website
+        </title>
+        <style>
+            body {
+                margin:0px;
+                background-color:lightgray;
+            }
+            nav {
+                width:100%;
+                background-color:#6CBAFF;
+                padding-top:20px;
+                padding-bottom:20px;
+                color:white;
+                box-shadow: 1px 9px 22px 0px rgba(0,0,0,0.75);
+            }
+            #home, #contact, #branches{
+                text-align:center;
+                padding-right:10px;
+                padding-left:20px;
+                font-family: 'Fredericka the Great';
+            }
+            #contact {
+                padding-right:20px;
+            }
+            a {
+                text-decoration:none;
+                color:inherit;
+            }
+            a:hover {
+                color:whitesmoke;
+            }
+            .topportion {
+                background-position:center;
+                background-size: 1980px 1020px;
+                background-repeat:no-repeat;
+                background-image:url(nizicafelogo.gif);
+                background-color:#247EBC;
+            }
+            .section {
+
+            }
+            .middlepage{
+                padding-top:100px;
+                padding-left:20px;
+                padding-right:20px;
+                background-attachment:fixed;
+                background-image:url(Nizicafebg.png);
+                background-size: inherit;
+                background-position:center;
+                padding-bottom:100px;
+            
+            }
+            header {
+                width:100%;
+                text-align:justify;
+            }
+            ul {
+               list-style-type:none;
+            }
+            .cafename {
+                font-family: 'Chewy';
+                font-size:68px;
+                margin:0px;
+                padding-left:45%;
+                padding-right:20%;
+                padding-top:580px;
+                padding-bottom:320px;
+                border-bottom-width: 5px;
+                border-bottom:lightskyblue;
+            }
+            input {
+                width:250px;
+                height:35px;
+                font-size:22px;
+                text-align:center;
+                border-radius: 30px;
+                font-family: 'Srisakdi';
+                padding:10px;
+                border-width: 0px;
+            }
+            section {
+                text-align: center;
+            }
+            .about {
+                background-color:white;
+                margin-bottom:200px;
+                padding-bottom:40px;
+                padding-top:20px;
+            }
+            .abouttitle {
+                font-family: 'Permanent Marker';
+                font-size:50px;
+            }
+            .aboutdesc {
+                font-family: 'Indie Flower';
+                font-size:24px;
+            }
+            .bestseller {
+                margin-top:0px;
+                background-image:url(headingpink.png);
+                background-size:inherit;
+                background-position: center;
+                background-repeat: no-repeat;
+                font-family: 'Permanent Marker';
+                font-size:48px;
+                color:black;
+                text-align:center;
+                padding-top:90px;
+                height:130px;
+                margin-bottom:0px;
+            }
+            table {
+                text-align: center;
+                width:100%;
+                margin-top:0px;
+                border-spacing:0px;
+            }
+            .rainbowcolor {
+                text-align:center;
+                background-color:azure;
+                padding-left:40px;
+                padding-right:40px;
+                font-family: 'Schoolbell';
+                font-size:24px;
+                border-bottom-width:0px;
+                border-top-width:0px;
+                margin-top:0px;
+                margin-bottom:0px;
+            }
+            #red, #redp, #redd {
+                background-color: #FE6F73;
+            }
+            #orange, #orangep, #oranged {
+                background-color: #F9C261;
+            }
+            #yellow, #yellowp, #yellowd {
+                background-color:#F9F461;
+            }
+            #green, #greenp, #greend {
+                background-color:#89C64F;
+            }
+            #blue, #bluep, #blued {
+                background-color: #6CEBE9;
+            }
+            #purple, #purplep, #purpled {
+                background-color: #E290FF;
+            }
+            .line {
+                background-color:whitesmoke;
+            }
+            .desc {
+                padding-top:10px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;;
+            }
+            .head {
+                font-size:34px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding-top:10px;
+            }
+            .rv {
+                width:100%;
+            }
+            .line::after {
+                content:"\a";
+                white-space:pre;
+            }
+            .pricep {
+                width:100px;
+            }
+            .orderp:hover {
+                opacity: 0.6;
+            }
+            aside {
+                padding-right:20px;
+                text-align:right;
+                font-family:'Permanent Marker';
+            }
+            footer {
+                font-family: 'Fredericka the Great';
+                background-color:#6CBAFF;
+                color:white;
+                margin:0px;
+                padding-top: 20px;
+                padding-bottom:20px;
+                box-shadow: 1px 9px 22px 0px rgba(0,0,0,0.75);
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a class="navigate" id="home" href="#home">
+                HOME
+            </a>
+            <a class="navigate" id="branches" href="#branches">
+                BRANCHES
+            </a>
+            <a class="navigate" id="contact" href="#contact">
+                CONTACT
+            </a>
+        </nav>
+        <div class="topportion">    
+            <header>
+                <h1 class="cafename">
+                    &nbsp;<input type="text" placeholder="Order a sip of color">
+                </h1>
+            </header>
+        </div>
+        <div class="middlepage">
+            <section>
+                <div class="about">
+                    <h2 class="abouttitle">ABOUT NIZI CAFE</h2>
+                    <p class="aboutdesc">A cafe that is inspired by the phenomena that appears after a shower of rain. 'Nizi', a japanese term for rainbow, represents the different colors demonstrated in our best-seller drinks. Enjoy each splash of color!  </p>
+                </div>
+            </section>
+            <article>
+                <h2 class="bestseller">Best Sellers</h2>
+                <table>
+                    <tr>
+                        <td class="rainbowcolor head" id="red">Akai</td>
+                        <td class="rainbowcolor head" id="orange">Orenji</td>
+                        <td class="rainbowcolor head" id="yellow">Kiiro</td>
+                        <td class="rainbowcolor head" id="green">Midori</td>
+                        <td class="rainbowcolor head" id="blue">Ao</td>
+                        <td class="rainbowcolor head" id="purple">Murasaki</td>
+                    </tr>
+                    <tr>
+                        <td class="rainbowcolor" id="redp">&nbsp; <img class="rv" alt="Redvelvet" src="RedvelvetC.png"></td>
+                        <td class="rainbowcolor" id="orangep"><img class="rv" alt="Creamsickle" src="orangecreamsicklecocktail.png"></td>
+                        <td class="rainbowcolor" id="yellowp"><img class="rv" alt="Creamsickle" src="spikedbananasplitmilkshake.png"></td>
+                        <td class="rainbowcolor" id="greenp"><img class="rv" alt="Creamsickle" src="matchalatte.png"></td>
+                        <td class="rainbowcolor" id="bluep"><img class="rv" alt="Creamsickle" src="Blueraspberrymilkshake.png"></td>
+                        <td class="rainbowcolor" id="purplep"><img class="rv" alt="Creamsickle" src="bananablueberrysmoothie.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="rainbowcolor desc" id="redd"><span class="line">Red Velvet Hot Chocolate </span> <a class="orderp" href="#order"><img class="pricep" alt="Creamsickle" src="150.png"></a></td>
+                        <td class="rainbowcolor desc" id="oranged"><span class="line">Orange Creamsickle Cocktail</span> <a class="orderp" href="#order"><img class="pricep" alt="Creamsickle" src="185.png"></a> </td>
+                        <td class="rainbowcolor desc" id="yellowd"><span class="line">Spiked Banana split Milkshake </span><a class="orderp" href="#order"><img class="pricep" alt="Creamsickle" src="95.png"></a></td>
+                        <td class="rainbowcolor desc" id="greend"><span class="line">Matcha Latte </span><a class="orderp" href="#order"><img class="pricep" alt="Creamsickle" src="150.png"></a></td>
+                        <td class="rainbowcolor desc" id="blued"><span class="line">Blue Raspberry Milkshake</span> <a class="orderp" href="#order"><img class="pricep" alt="Creamsickle" src="95.png"></a></td>
+                        <td class="rainbowcolor desc" id="purpled"><span class="line">Banana Blueberry Smoothie </span><a class="orderp" href="#order"><img class="pricep" alt="Creamsickle" src="95.png"></a></td>
+                    </tr>
+                </table>
+            </article>
+            <aside>
+                <h2>
+                    <a href="#More">(For Complete Menu...) </a>
+                </h2>
+            </aside>
+        </div>
+        <footer>
+            <ul>
+                <li>
+                    ©2021 NIZI CAFE All Rights Reserved
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
